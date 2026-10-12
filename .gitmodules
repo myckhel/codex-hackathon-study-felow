@@ -1,0 +1,3 @@
+[submodule "system/study-fellow-ui"]
+	path = system/study-fellow-ui
+	url = https://github.com/myckhel/study-fellow-ui.git
