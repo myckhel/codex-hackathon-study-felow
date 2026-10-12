@@ -88,10 +88,10 @@ Mark each item `[x]` when its acceptance evidence exists; use `[~]` for in progr
 
 ### Stage 3 — Build the vertical slice (Sat 10–Mon 12 Oct)
 
-- [ ] Inspect existing code and identify the shortest path to a working learner flow.
-- [ ] Implement the start flow (resource/topic, goal, time, optional diagnostic).
-- [ ] Implement the lesson loop with one concept, learner input, adaptive follow-up, and guided practice.
-- [ ] Add citations/source passages where available; visibly distinguish source-supported facts from supplemental explanation.
+- [x] Inspect the current workspace and identify the shortest path: scaffold a focused React/Vite app in `system/study-fellow-ui/`; the workspace previously contained planning artifacts and survey scripts only.
+- [~] Implement the start flow (resource/topic, goal, time, optional diagnostic). Initial landing/dashboard and photosynthesis entry point exist; learner goal/time and skip-able diagnostic remain to build.
+- [~] Implement the lesson loop with one concept, learner input, adaptive follow-up, and guided practice. A basic photosynthesis lesson shell exists; response-specific branches and fresh transfer scoring remain to build.
+- [~] Add citations/source passages where available; visibly distinguish source-supported facts from supplemental explanation. Initial OpenStax source link is present in lesson shell; adaptivity/source treatment is incomplete.
 - [ ] Persist enough progress to return to the session and show the next action.
 - [ ] Keep a simple fallback path using a preloaded resource if upload, network, or model integration is unreliable.
 
@@ -130,11 +130,11 @@ Mark each item `[x]` when its acceptance evidence exists; use `[~]` for in progr
 
 ## Progress snapshot (updated 12 Oct 2026)
 
-- **Current stage:** Stage 2 specification is ready; Stage 3 build has not started in this workspace.
-- **Completed:** Official brief received; owner-selected secondary-school biology/photosynthesis scenario framed; Stage 1 items 3–7 have acceptance evidence; owner-provided judging weights recorded; N=7 summary remains directional and from a different learner group; Stage 2 lesson journey, source, learning rubric, and implementation criteria captured in `outputs/photosynthesis-demo-spec.md`.
-- **In progress:** Build the learner-facing vertical slice in the actual application repository; obtain biology review and target-learner feedback if time permits.
-- **Blocked by / unknown:** This workspace has planning files and survey scripts but no app implementation to extend; exact submission cutoff/timezone, required deliverables, detailed judging guidance, and any additional AI-use rules; raw survey rows; team capacity. The biology segment's reachability and need are not validated.
-- **Next action:** Identify/open the application codebase, implement the text-first photosynthesis lesson and adaptive branches against the spec, then review the science with a knowledgeable person.
+- **Current stage:** Stage 3 — build the vertical slice; initial app scaffold and basic photosynthesis route are in place.
+- **Completed:** Official brief and judging rubric recorded; owner-selected secondary-school biology/photosynthesis scenario framed; Stage 1 items 3–7 have acceptance evidence; Stage 2 lesson journey, source, learning rubric, and implementation criteria captured in `outputs/photosynthesis-demo-spec.md`; Bun/Vite React TypeScript app created in `system/study-fellow-ui/` with requested stack.
+- **In progress:** Complete the adaptive learner loop, fresh transfer check, session resume, and source-grounded feedback. Biology review and target-learner feedback are still desirable.
+- **Blocked by / unknown:** Exact submission cutoff/timezone and detailed rubric guidance; raw survey rows; team capacity. The biology segment's reachability and need are not validated. Production build currently warns about a large JS bundle (~794 kB minified).
+- **Next action:** Implement response-specific feedback and fresh transfer scoring, persist the learner's progress, and split/trim the bundle; then review the lesson science.
 
 ## Working rules
 
