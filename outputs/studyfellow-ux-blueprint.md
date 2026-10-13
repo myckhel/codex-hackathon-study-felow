@@ -1,6 +1,6 @@
 # StudyFellow UX Blueprint
 
-**Purpose:** Small product/design reference for the hackathon MVP. StudyFellow is intended for professional learners and secondary-school, college, and university students who struggle with a specific concept or topic. The current build demonstrates one configured photosynthesis lesson; it does not narrow the product audience to biology or secondary school. Only the home screen and basic photosynthesis lesson shell currently exist in `system/study-fellow-ui/`.
+**Purpose:** Small product/design reference for the hackathon MVP. StudyFellow is intended for professional learners and secondary-school, college, and university students who struggle with a specific concept or topic. The current build demonstrates one configured photosynthesis lesson; it does not narrow the product audience to biology or secondary school. The local frontend journey now exists in `system/study-fellow-ui/`; it uses deterministic feedback and assessment, with verification evidence tracked in project memory.
 
 ## 1. Overall learner experience
 
@@ -119,7 +119,8 @@ Keep each screen focused on one decision or idea. Use concise paragraphs, readab
 
 ### Navigation model
 
-- **Home (`/`):** One featured `Continue learning` lesson card; if there is no saved session, the same card starts the lesson. A secondary `How it works` affordance may explain the teaching loop.
+- **Home (`/`):** `Learn now` with no session, `Continue learning` with saved progress, and `View your recap` at the recap stage. The featured lesson card shows the saved step and next action. A secondary `How it works` affordance may explain the teaching loop.
+- **Setup (`/start`):** Topic/resource drafts, explicit photosynthesis sample selection, optional custom goal, and three/five-minute time choice. General topic teaching and upload processing are future capabilities.
 - **Lesson (`/lesson`):** A focused, step-based flow with progress, `Back`, `Continue`, `I’m not sure`, and `Save and leave` actions. Keep the source accessible without losing the learner's place.
 - **Recap:** End state of the lesson flow (may be a screen/state rather than a separate route): first-attempt score, what the learner showed, what to revisit, source, and next action.
 - Keep navigation shallow for the demo; no timetable, course catalogue, profile, or settings section is needed.
@@ -147,7 +148,7 @@ Keep each screen focused on one decision or idea. Use concise paragraphs, readab
 
 ## 5. Build status
 
-The current React app in `system/study-fellow-ui/` has a home screen and a basic photosynthesis lesson shell. The optional diagnostic/skip path, distinct misconception branches, scored fresh-transfer question, recap, and reliable save/resume described here remain to be implemented. Photosynthesis is currently static demo content rather than a configurable multi-subject engine. See `PROJECT_ROADMAP.md` for build status.
+The React app in `system/study-fellow-ui/` now implements the local journey: topic/resource draft setup with explicit sample handoff, goal and three/five-minute choice, optional diagnostic, sourced explanation, distinct local response branches, optional practice, scored transfer, one different retry, recap, and validated browser-local save/resume. Inline SVG illustrations and icons support the text-first flow. Submitted attempts and seeded-answer provenance are preserved; ambiguous answers invite clarification. Broad content ingestion and live AI remain unimplemented. See `PROJECT_ROADMAP.md` for acceptance evidence and validation status.
 
 ## 6. Diagram source and FigJam reference
 

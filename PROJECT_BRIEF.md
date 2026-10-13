@@ -92,7 +92,7 @@ One-off and scheduled sessions share the same teaching loop. A learner should be
 
 ## Proof of concept
 
-Demonstrate one complete, reusable topic-learning loop using a configured photosynthesis lesson: start from a topic or sample resource, encounter a deliberate misconception, receive an adapted explanation, complete practice, and see a useful recap. The demo should make the interaction transferable to other subjects and learner levels without claiming those configurations are already built. Local save/resume is a product goal; it is not implemented yet and should only be presented as working after the Stage 3 persistence task is complete.
+Demonstrate one complete, reusable topic-learning loop using a configured photosynthesis lesson: start from a topic or sample resource, encounter a deliberate misconception, receive an adapted explanation, complete practice, and see a useful recap. The demo should make the interaction transferable to other subjects and learner levels without claiming those configurations are already built. The frontend now implements local save/resume for one browser session, with explicit unavailable-storage and corrupt-data recovery. This is a deterministic photosynthesis demo; broad topic teaching, resource ingestion, and live model integration remain future work.
 
 ### In scope for the first proof
 

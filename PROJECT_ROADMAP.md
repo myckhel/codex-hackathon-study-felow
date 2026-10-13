@@ -4,7 +4,7 @@
 **Judging rubric (owner-provided, 12 Oct 2026):** 25% Uniqueness (novelty of approach); 25% Scalability (ability to scale across geographies); 25% Codex Usage (how well Codex was used to build the project); 25% Presentation (quality of the submission presentation). No detailed sub-rubric or scoring guidance has been supplied.  
 **Primary track:** Engagement & Staying in the Learning Journey.  
 **Supporting fit:** Access & Discovery, through making a learner-provided resource easier to use; keep Guidance & Opportunity as a future direction unless the core demo naturally supports a credible next step.  
-**North-star demo:** A learner gets stuck on a specific concept, StudyFellow responds to their reasoning, the learner demonstrates application, and they see a clear next step. The reusable product is intended for professional and secondary-school, college, and university learners; the hackathon demonstrates it with one photosynthesis lesson. Local resume remains planned until implemented.
+**North-star demo:** A learner gets stuck on a specific concept, StudyFellow responds to their reasoning, the learner demonstrates application, and they see a clear next step. The reusable product is intended for professional and secondary-school, college, and university learners; the hackathon demonstrates it with one photosynthesis lesson. Browser-local resume is implemented and verified for this deterministic demo; no account or cross-device sync exists.
 
 ## Early learner signal (owner-provided summary, 8 Oct 2026)
 
@@ -78,7 +78,7 @@ Mark each item `[x]` when its acceptance evidence exists; use `[~]` for in progr
 
 ### Stage 2 — Lock the demo journey and evidence (Fri 9–Sat 10 Oct)
 
-- [x] Storyboard a 3–5 minute judge-facing lesson journey with misconception branches and a fresh transfer check in `outputs/photosynthesis-demo-spec.md`. Local interruption/resume is part of the MVP continuity goal but remains unimplemented; see Stage 3.
+- [x] Storyboard a 3–5 minute judge-facing lesson journey with misconception branches and a fresh transfer check in `outputs/photosynthesis-demo-spec.md`. Local interruption/resume is now implemented and tested; see Stage 3.
 - [x] Choose OpenStax Biology 2e photosynthesis material and prepare the explanation, prompt, and fresh final question in the spec; subject-matter review remains outstanding.
 - [x] Define minimum interaction acceptance criteria and scoring rubric in the spec.
 - [x] Set the differentiating proof for this slice: response-specific explanation followed by a novel application check.
@@ -89,11 +89,11 @@ Mark each item `[x]` when its acceptance evidence exists; use `[~]` for in progr
 ### Stage 3 — Build the vertical slice (Sat 10–Mon 12 Oct)
 
 - [x] Inspect the current workspace and identify the shortest path: scaffold a focused React/Vite app in `system/study-fellow-ui/`; the workspace previously contained planning artifacts and survey scripts only.
-- [~] Implement the start flow (resource/topic, goal, time, optional diagnostic). Initial landing/dashboard and photosynthesis entry point exist; learner goal/time and skip-able diagnostic remain to build.
-- [~] Implement the lesson loop with one concept, learner input, adaptive follow-up, and guided practice. A basic photosynthesis lesson shell exists; response-specific branches and fresh transfer scoring remain to build.
-- [~] Add citations/source passages where available; visibly distinguish source-supported facts from supplemental explanation. Initial OpenStax source link is present in lesson shell; adaptivity/source treatment is incomplete.
-- [ ] Persist enough progress locally to return to the session and show the next action. This is the MVP's limited save/resume proof; no account or cross-device sync.
-- [ ] Keep a simple fallback path using a preloaded resource if upload, network, or model integration is unreliable.
+- [x] Implement the start flow: topic/resource drafts with explicit sample handoff, optional custom goal, three/five-minute choice, and skip-able diagnostic. Unsupported input does not generate lesson content.
+- [x] Implement the local lesson loop: response-specific deterministic feedback, clarification for uncertain wording, optional practice, two-point fresh transfer scoring, one different retry, and recap. First and retry results and seeded-answer provenance remain separate; no live model is connected.
+- [x] Add source summaries, section locators, and OpenStax links; label factual teaching separately from authored examples/feedback. Biology subject review remains outstanding.
+- [x] Persist one versioned browser-local session, including setup, drafts, immutable submitted attempts, results, stage, and next action. Reload, failed storage, corrupt snapshots, confirmed reset, and Back navigation are tested; no account or cross-device sync.
+- [x] Bundle the preloaded lesson and local rules as the working path. Final production desktop/mobile checks verify cached offline reload, saved-draft resume, and completion after service-worker activation. First visits and external source pages require network access.
 
 **Gate:** One learner can complete the main journey without a presenter manually repairing the flow.
 
@@ -102,8 +102,8 @@ Mark each item `[x]` when its acceptance evidence exists; use `[~]` for in progr
 - [ ] Have a subject-knowledgeable reviewer inspect the lesson, misconception response, and questions.
 - [ ] Observe a small number of target learners using the flow; record where they hesitate, what helps, and whether the final answer shows understanding.
 - [ ] Fix the highest-impact correctness, usability, and continuity issues first.
-- [ ] Check empty, loading, failure, long-response, and resume states; make errors recoverable.
-- [ ] Check phone-sized layout, readable text, keyboard basics, and low-bandwidth behavior appropriate to the prototype.
+- [x] Check empty answers, unknown/contradictory responses, failed lazy imports, storage failure/corruption, long goals/filenames, and reload/resume recovery through Playwright; sources and full answers remain available through disclosures.
+- [x] Check desktop/mobile and 320px layouts, stage focus, keyboard actions, reduced motion, and cached production offline behavior. Inline SVG icons and energy-flow illustrations use existing tokens without new dependencies; comprehensive accessibility and low-end-device audits remain future work.
 
 **Gate:** The central teaching interaction is understandable, credible, and repeatable; limitations are stated honestly.
 
@@ -130,11 +130,11 @@ Mark each item `[x]` when its acceptance evidence exists; use `[~]` for in progr
 
 ## Progress snapshot (updated 13 Oct 2026)
 
-- **Current stage:** Stage 3 — build the vertical slice; initial app scaffold and basic photosynthesis route are in place.
+- **Current stage:** Stage 4 — validate the completed deterministic frontend vertical slice; biology review and target-learner observation remain outstanding.
 - **Completed:** Official brief and judging rubric recorded; broad intended learner audience (professionals plus secondary-school, college, and university learners) separated from the owner-selected secondary-school biology/photosynthesis demo; learners distinguished from potential institutional adopters/payers; product-owner framing and evidence limits documented in `PROJECT_BRIEF.md`; UX blueprint and demo spec updated; Stage 2 lesson journey, source, learning rubric, and implementation criteria captured; Bun/Vite React TypeScript app created in `system/study-fellow-ui/` with requested stack.
-- **In progress:** Complete the adaptive learner loop, fresh transfer check, and local save/resume. Biology review and feedback from learners across relevant contexts are still desirable.
-- **Blocked by / unknown:** Exact submission cutoff/timezone and detailed rubric guidance; raw survey rows; team capacity. Need/reachability for the photosynthesis demo, Nigerian curriculum, acquisition channels, first learner/adopter segment, and willingness to pay remain unvalidated. Architecture notes the main JS chunk at ~611 kB and total JS at ~941 kB; this is a recorded measurement, not a fresh build from this update.
-- **Next action:** Implement response-specific feedback, fresh transfer scoring, and local save/resume; reduce initial and total asset costs where feasible; then review the lesson science and observe a small number of learners.
+- **Implementation evidence (13 Oct):** Lint/build passed; 24 desktop/mobile development checks passed with two production-only checks skipped; six additional assessment/storage checks and two final production offline checks passed. Independent reviewer verdict is recorded in project memory. The flow includes setup, optional diagnostic, response-specific local feedback, transfer/retry, recap, and browser-local resume.
+- **Blocked by / unknown:** Exact submission cutoff/timezone and detailed rubric guidance; raw survey rows; team capacity. Need/reachability for the photosynthesis demo, Nigerian curriculum, acquisition channels, first learner/adopter segment, and willingness to pay remain unvalidated. Final build measures main JS at 624.36 kB and total app JS at 797.04 kB; PWA precache is 797.84 KiB. The main-chunk warning remains, although total app JS is lower than the 941.21 kB baseline.
+- **Next action:** Have the lesson science reviewed, observe a small number of learners, fix resulting blockers, and rehearse the clean-start/interruption demo. Avoid new scope before submission.
 
 ## Working rules
 
