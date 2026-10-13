@@ -128,10 +128,10 @@ Mark each item `[x]` when its acceptance evidence exists; use `[~]` for in progr
 
 **Gate:** Submission is complete within the official window and the demo's value and evidence are clear within the allocated time.
 
-## Progress snapshot (updated 12 Oct 2026)
+## Progress snapshot (updated 13 Oct 2026)
 
 - **Current stage:** Stage 3 — build the vertical slice; initial app scaffold and basic photosynthesis route are in place.
-- **Completed:** Official brief and judging rubric recorded; owner-selected secondary-school biology/photosynthesis scenario framed; Stage 1 items 3–7 have acceptance evidence; Stage 2 lesson journey, source, learning rubric, and implementation criteria captured in `outputs/photosynthesis-demo-spec.md`; Bun/Vite React TypeScript app created in `system/study-fellow-ui/` with requested stack.
+- **Completed:** Official brief and judging rubric recorded; owner-selected secondary-school biology/photosynthesis scenario framed; the five product-owner framing areas (problem, pain, opportunity, market hypothesis, vision) documented in `PROJECT_BRIEF.md` with evidence limits; Stage 1 items 3–7 have acceptance evidence; Stage 2 lesson journey, source, learning rubric, and implementation criteria captured in `outputs/photosynthesis-demo-spec.md`; Bun/Vite React TypeScript app created in `system/study-fellow-ui/` with requested stack.
 - **In progress:** Complete the adaptive learner loop, fresh transfer check, session resume, and source-grounded feedback. Biology review and target-learner feedback are still desirable.
 - **Blocked by / unknown:** Exact submission cutoff/timezone and detailed rubric guidance; raw survey rows; team capacity. The biology segment's reachability and need are not validated. Production build currently warns about a large JS bundle (~794 kB minified).
 - **Next action:** Implement response-specific feedback and fresh transfer scoring, persist the learner's progress, and split/trim the bundle; then review the lesson science.

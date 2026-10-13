@@ -6,6 +6,44 @@
 
 The fellow teaches progressively: it clarifies the learner's goal, explains concepts in manageable steps, uses practical examples, invites practice, responds to the learner's reasoning, and adapts when something is unclear. It recaps key ideas, saves progress, and helps the learner continue later. Scheduled sessions may include reminders and a short check-in; missed sessions should be easy to reschedule or catch up on.
 
+## Product owner framing checklist (13 October 2026)
+
+This framing separates the current hackathon hypothesis from validated findings and from the longer-term product direction.
+
+### 1. Problem identification — defined for the prototype; validation pending
+
+**Focused problem:** Secondary-school biology students may struggle to explain how plants use light energy, water, and carbon dioxide to produce glucose during photosynthesis.
+
+This is the owner's selected prototype problem, documented in `outputs/photosynthesis-demo-spec.md`. It is a specific, demonstrable learning challenge, but no secondary-school learner observation has yet established how common or consequential it is.
+
+### 2. Customer pain point — signals identified; not validated for the chosen segment
+
+The pain to investigate is that learners can have access to study content yet still lack clear explanations, practical guided practice, trustworthy answers, and timely help when they get stuck or miss class.
+
+The available survey summary describes **7 technical and vocational learners in Nigeria**, not the selected secondary-school biology audience: 6/7 prioritized practical examples and guided practice; 6/7 cited incorrect explanations as a blocker; 4/7 cited poor alignment with their course material; and 5/7 reported competing time obligations. A study-group contact also indicated that catching up after class absence matters to their virtual-assistant group. These are directional signals from other learner contexts. They motivate investigation but do not validate the photosynthesis pain point. See the survey limitations above and the study-group records in `outputs/`.
+
+**Validation gap:** Ask secondary-school biology learners or a relevant teacher about a recent photosynthesis learning difficulty, what they tried, and what remained unclear. Observe whether the lesson's adaptive explanation helps them answer a fresh question.
+
+### 3. Business opportunity — product opportunity articulated; commercial case unknown
+
+There is an opportunity to make credible learning support more useful between classes by connecting a concise explanation to learner practice, responsive feedback, and a manageable next step. StudyFellow's potential value is in helping learners work through a concept and continue their learning, rather than only surfacing or summarizing content.
+
+For this hackathon, assess this as a **product and learner-value opportunity**. No market size, willingness-to-pay evidence, institutional buyer, pricing, or sustainable business model has been established. Schools and teachers are possible reviewers or distribution partners, not confirmed customers.
+
+### 4. Market hypothesis — narrow beachhead proposed; geography and channel unconfirmed
+
+**Prototype hypothesis:** Secondary-school biology learners studying photosynthesis will find a short, source-linked, text-first lesson more useful when it responds to their explanation and checks transfer to a new situation.
+
+The initial user is the learner. A biology teacher or subject-knowledgeable reviewer may help validate lesson accuracy; a teacher, school, or learner community may provide a route to reach participants. The first country, curriculum, acquisition route, and any buyer remain undecided. The previous Nigeria survey sample is not evidence that this selected segment or market is reachable there.
+
+**Evidence needed:** Reach a small number of learners in one named curriculum/geography; observe completion and the fresh-transfer answer; ask whether they would use the lesson again and where they would expect to find it. Keep this small-sample evidence directional.
+
+### 5. Initial product vision — stated; broad product remains aspirational
+
+**Vision:** StudyFellow helps learners make steady progress by turning a topic or course resource into a concise, source-grounded lesson that adapts to their reasoning, checks what they can apply, and gives them a clear next step.
+
+**Hackathon expression:** Demonstrate that vision with the owner-selected photosynthesis lesson: explain one process, respond to a learner's reasoning, and check understanding with a fresh light-limitation scenario. Scheduled study plans, reminders, broad resource ingestion, and cross-region personalization remain outside this first vertical slice unless the core interaction is complete.
+
 ## Problem
 
 Access to course materials does not ensure that learners can understand and use them. Students may get stuck without timely feedback, struggle to organize independent study, or lose momentum after missing a session. A generic summary does not necessarily help them practise, resolve a misconception, or know what to do next.
@@ -20,7 +58,9 @@ For the first prototype, prioritize a short guided practice loop, feedback that 
 
 ## Intended audience
 
-Initial audience: a reachable group of college or university learners, to be selected through discovery research. The first prototype should focus on one learner segment, one subject, and one credible course resource. Avoid assuming that one learner profile, curriculum, language, or access condition represents all African learners.
+**Hackathon prototype audience:** Secondary-school biology learners studying photosynthesis, selected by the owner as a bounded test segment. Their reachability and the prevalence of this difficulty have not yet been validated.
+
+**Longer-term audience:** Learners who need help understanding and persisting with course concepts. The specific age band, geography, curriculum, and route to reach them remain open discovery questions. Avoid assuming that one learner profile, curriculum, language, or access condition represents all African learners.
 
 ## Product experience
 
