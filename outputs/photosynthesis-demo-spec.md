@@ -64,4 +64,4 @@ Score the fresh transfer answer, not recognition of a multiple-choice response:
 - The selected learner segment and concept are a product choice for a bounded demo, not a finding from the N=7 survey.
 - A short post-lesson response measures immediate application in this scenario, not durable learning, broad effectiveness, or all photosynthesis understanding.
 - English text is the current scope; multilingual quality and curriculum alignment require review before claims are made.
-- Build status is pending: this workspace currently contains planning artifacts and survey scripts, not a learner-facing app implementation.
+- Build status is partial: `system/study-fellow-ui/` contains an initial learner dashboard and photosynthesis lesson shell. Adaptive response branches, scored fresh transfer, recap, and reliable resume behavior remain to be implemented.
