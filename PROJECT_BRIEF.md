@@ -26,17 +26,23 @@ The available survey summary describes **7 technical and vocational learners in 
 
 ### 3. Business opportunity — product opportunity articulated; commercial case unknown
 
-There is an opportunity to make credible learning support more useful between classes by connecting a concise explanation to learner practice, responsive feedback, and a manageable next step. StudyFellow's potential value is in helping learners work through a concept and continue their learning, rather than only surfacing or summarizing content.
+There is an opportunity to make credible learning support more useful between classes by connecting a concise explanation to learner practice, responsive feedback, and a manageable next step. The owner's market direction is **Africa, starting with Nigeria**. StudyFellow's potential value is in helping learners work through a concept and continue their learning, rather than only surfacing or summarizing content.
 
-For this hackathon, assess this as a **product and learner-value opportunity**. No market size, willingness-to-pay evidence, institutional buyer, pricing, or sustainable business model has been established. Schools and teachers are possible reviewers or distribution partners, not confirmed customers.
+For this hackathon, assess this as a **product and learner-value opportunity**. Professional learners, schools, and academies are owner-identified potential adopters; professional learners may also pay individually, while schools or academies may pay institutionally. These are customer hypotheses, not confirmed buyers. No market size, willingness-to-pay evidence, pricing, or sustainable business model has been established.
 
 ### 4. Market hypothesis — narrow beachhead proposed; geography and channel unconfirmed
 
 **Prototype hypothesis:** Secondary-school biology learners studying photosynthesis will find a short, source-linked, text-first lesson more useful when it responds to their explanation and checks transfer to a new situation.
 
-The initial user is the learner. A biology teacher or subject-knowledgeable reviewer may help validate lesson accuracy; a teacher, school, or learner community may provide a route to reach participants. The first country, curriculum, acquisition route, and any buyer remain undecided. The previous Nigeria survey sample is not evidence that this selected segment or market is reachable there.
+**Geography:** Africa, starting with Nigeria (owner direction). The specific state, language, and curriculum for the prototype audience still need to be selected.
 
-**Evidence needed:** Reach a small number of learners in one named curriculum/geography; observe completion and the fresh-transfer answer; ask whether they would use the lesson again and where they would expect to find it. Keep this small-sample evidence directional.
+**Potential adopters and payers:** Professional learners (individual adoption/payment), schools, and academies (institutional adoption/payment). Which segment to serve first and who controls purchase remain undecided.
+
+**Reach assumption:** Marketing is the current proposed way to reach learners and prospective institutional adopters. Specific channels, partners, cost, conversion, and retention are untested. A biology teacher or subject-knowledgeable reviewer may also help verify the lesson, but this is not itself a validated acquisition channel.
+
+The prior Nigeria survey sample was technical/vocational and does not establish demand or reachability among secondary-school biology students, professional learners broadly, or institutional buyers.
+
+**Evidence needed:** Select one Nigerian curriculum and reach a small number of relevant learners; observe lesson completion and the fresh-transfer answer; ask whether they would use it again and which marketing channels they notice or trust. Separately interview professional learners and school/academy decision-makers to test the first segment, adoption path, and willingness to pay. Keep small-sample evidence directional.
 
 ### 5. Initial product vision — stated; broad product remains aspirational
 
@@ -60,7 +66,7 @@ For the first prototype, prioritize a short guided practice loop, feedback that 
 
 **Hackathon prototype audience:** Secondary-school biology learners studying photosynthesis, selected by the owner as a bounded test segment. Their reachability and the prevalence of this difficulty have not yet been validated.
 
-**Longer-term audience:** Learners who need help understanding and persisting with course concepts. The specific age band, geography, curriculum, and route to reach them remain open discovery questions. Avoid assuming that one learner profile, curriculum, language, or access condition represents all African learners.
+**Longer-term market direction:** Learners across Africa, starting from Nigeria, who need help understanding and persisting with course concepts. Professional learners, schools, and academies are candidate adopters/payers; segment priority, curriculum, language, institutional buying process, and route to reach them remain open discovery questions. Avoid assuming that one learner profile, curriculum, language, or access condition represents all African learners.
 
 ## Product experience
 
