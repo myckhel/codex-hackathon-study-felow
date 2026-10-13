@@ -1,6 +1,6 @@
 # StudyFellow UX Blueprint
 
-**Purpose:** Small product/design reference for the hackathon MVP. This describes the intended learner experience; only the home screen and basic photosynthesis lesson shell currently exist in `system/study-fellow-ui/`.
+**Purpose:** Small product/design reference for the hackathon MVP. StudyFellow is intended for professional learners and secondary-school, college, and university students who struggle with a specific concept or topic. The current build demonstrates one configured photosynthesis lesson; it does not narrow the product audience to biology or secondary school. Only the home screen and basic photosynthesis lesson shell currently exist in `system/study-fellow-ui/`.
 
 ## 1. Overall learner experience
 
@@ -31,7 +31,9 @@ flowchart LR
 - Show the source near the teaching content and the learner's progress near the lesson.
 - On return, say what the learner last worked on and let them continue or restart.
 
-## 2. Focused MVP flow: photosynthesis lesson
+## 2. Focused MVP flow: photosynthesis demo scenario
+
+This is one seed lesson used to demonstrate the reusable flow (topic → explain → learner reasoning → responsive feedback → transfer check → next step). Other subjects, learner levels, and professional topics are future content configurations, not current app capabilities.
 
 ```mermaid
 flowchart TD
@@ -94,10 +96,12 @@ flowchart LR
 
 ## 4. Reference document
 
-### Intended learner
+### Intended learner and demo persona
 
-- **Prototype learner:** Secondary-school biology student studying photosynthesis. The owner selected this test segment; the specific Nigerian curriculum, learner reachability, and prevalence of the difficulty still need validation.
-- **Market direction:** Africa, starting with Nigeria. Professional learners, schools, and academies are broader candidate adopters/payers; they are not the user segment for this lesson demo.
+- **Intended learners:** Professionals and secondary-school, college, and university learners who need help with a specific concept or topic. The product should start from the learner’s context or material rather than assume a single course or level.
+- **Demo persona:** Secondary-school biology learner studying photosynthesis. This configured test case does not establish the primary market segment; its curriculum fit, reachability, and difficulty prevalence still need validation.
+- **Potential adopters/payers:** Learners may adopt and pay individually; schools, academies, colleges, and universities may adopt or pay institutionally. The first segment and buying path are unvalidated.
+- **Market direction:** Africa, starting with Nigeria.
 - **Access assumptions:** Phone-first, text-first, potentially limited data, mixed confidence, and optional diagnostic. English is the prototype language; do not imply multilingual or offline AI support.
 
 ### Learner goals
@@ -132,7 +136,7 @@ Keep each screen focused on one decision or idea. Use concise paragraphs, readab
 
 | MVP for this hackathon | Later, if evidence supports it |
 |---|---|
-| One photosynthesis lesson for secondary-school biology | Multiple subjects, curricula, and learner levels |
+| Reusable topic-learning flow demonstrated with one photosynthesis lesson for secondary-school biology | Content configurations for multiple subjects, curricula, professional topics, and learner levels |
 | Optional recall check with skip | Adaptive diagnostics across a course |
 | Three response-sensitive feedback branches | Open-ended AI tutoring with broader evaluation and safeguards |
 | Fresh transfer question with a transparent 2-point rubric | Longitudinal mastery and retention tracking |
@@ -143,7 +147,7 @@ Keep each screen focused on one decision or idea. Use concise paragraphs, readab
 
 ## 5. Build status
 
-The current React app in `system/study-fellow-ui/` has a home screen and a basic photosynthesis lesson shell. The optional diagnostic/skip path, distinct misconception branches, scored fresh-transfer question, recap, and reliable save/resume described here remain to be implemented. See `PROJECT_ROADMAP.md` for build status.
+The current React app in `system/study-fellow-ui/` has a home screen and a basic photosynthesis lesson shell. The optional diagnostic/skip path, distinct misconception branches, scored fresh-transfer question, recap, and reliable save/resume described here remain to be implemented. Photosynthesis is currently static demo content rather than a configurable multi-subject engine. See `PROJECT_ROADMAP.md` for build status.
 
 ## 6. Diagram source and FigJam reference
 

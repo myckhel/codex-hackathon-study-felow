@@ -12,7 +12,9 @@ This framing separates the current hackathon hypothesis from validated findings 
 
 ### 1. Problem identification — defined for the prototype; validation pending
 
-**Focused problem:** Secondary-school biology students may struggle to explain how plants use light energy, water, and carbon dioxide to produce glucose during photosynthesis.
+**Product-level problem:** Learners across professional, secondary-school, college, and university settings may struggle to understand or apply a specific concept in their studies. StudyFellow is intended to help a learner work through that concept with guided, responsive teaching.
+
+**Bounded demo problem:** The current hackathon lesson tests this product hypothesis with secondary-school biology and photosynthesis: some learners may struggle to explain how plants use light energy, water, and carbon dioxide to produce glucose. This is a demo scenario, not the full product audience.
 
 This is the owner's selected prototype problem, documented in `outputs/photosynthesis-demo-spec.md`. It is a specific, demonstrable learning challenge, but no secondary-school learner observation has yet established how common or consequential it is.
 
@@ -32,7 +34,9 @@ For this hackathon, assess this as a **product and learner-value opportunity**. 
 
 ### 4. Market hypothesis — narrow beachhead proposed; geography and channel unconfirmed
 
-**Prototype hypothesis:** Secondary-school biology learners studying photosynthesis will find a short, source-linked, text-first lesson more useful when it responds to their explanation and checks transfer to a new situation.
+**Product hypothesis:** Learners in different education and professional contexts will find a short, source-linked lesson more useful when it responds to their explanation and checks application to a new situation.
+
+**Hackathon test case:** The team will demonstrate this reusable learning loop with a secondary-school biology photosynthesis lesson. The demo tests the interaction pattern; it does not validate demand across the broader audience.
 
 **Geography:** Africa, starting with Nigeria (owner direction). The specific state, language, and curriculum for the prototype audience still need to be selected.
 
@@ -64,9 +68,11 @@ For the first prototype, prioritize a short guided practice loop, feedback that 
 
 ## Intended audience
 
-**Hackathon prototype audience:** Secondary-school biology learners studying photosynthesis, selected by the owner as a bounded test segment. Their reachability and the prevalence of this difficulty have not yet been validated.
+**Intended learner audience:** Professionals and secondary-school, college, and university learners who struggle with a specific concept or topic. Their needs, contexts, and preferred teaching approaches will differ; the product should let a learner start from their own topic or learning material.
 
-**Longer-term market direction:** Learners across Africa, starting from Nigeria, who need help understanding and persisting with course concepts. Professional learners, schools, and academies are candidate adopters/payers; segment priority, curriculum, language, institutional buying process, and route to reach them remain open discovery questions. Avoid assuming that one learner profile, curriculum, language, or access condition represents all African learners.
+**Hackathon demo learner:** A secondary-school biology learner studying photosynthesis. This is one configured scenario for proving the learning loop, not a decision to focus the product only on biology or school learners. Its reachability and the prevalence of this specific difficulty have not yet been validated.
+
+**Market direction and roles:** Africa, starting with Nigeria. Learners are the users. Professional learners may adopt/pay individually; schools, academies, colleges, and universities are potential institutional adopters or payers. These are hypotheses, and the first segment, buying path, curriculum, language, and route to reach each remain open. Avoid assuming that one learner profile, curriculum, language, or access condition represents all African learners.
 
 ## Product experience
 
@@ -86,7 +92,7 @@ One-off and scheduled sessions share the same teaching loop. A learner should be
 
 ## Proof of concept
 
-Demonstrate one complete lesson in one subject: start from a topic or sample resource, encounter a deliberate misconception, receive an adapted explanation, complete practice, and see a useful saved recap that supports resumption. The demo should make the learning interaction clear without requiring a full academic timetable or production-ready platform.
+Demonstrate one complete, reusable topic-learning loop using a configured photosynthesis lesson: start from a topic or sample resource, encounter a deliberate misconception, receive an adapted explanation, complete practice, and see a useful recap. The demo should make the interaction transferable to other subjects and learner levels without claiming those configurations are already built. Local save/resume is a product goal; it is not implemented yet and should only be presented as working after the Stage 3 persistence task is complete.
 
 ### In scope for the first proof
 

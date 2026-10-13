@@ -1,10 +1,10 @@
 # StudyFellow photosynthesis demo specification
 
-**Status:** Ready to build as a focused prototype scenario. The learner need and concept are the owner's selection; target-learner validation is still pending.
+**Status:** Focused demo fixture for StudyFellow's broader topic-learning product. The learner need and concept are the owner's selection; target-learner validation is still pending. This specification does not define the product's full audience or supported subject range.
 
 ## Framing
 
-- **Target learner:** Secondary-school biology student.
+- **Demo persona:** Secondary-school biology student. The intended product audience is broader: professional learners and secondary-school, college, and university learners who struggle with a specific concept or topic.
 - **Concept:** How light energy, water, and carbon dioxide support photosynthesis and sugar production.
 - **Problem:** Secondary school biology students may struggle to explain how plants use light energy, water, and carbon dioxide to produce glucose during photosynthesis.
 - **Promise:** StudyFellow will teach this process through a guided example and adapt its follow-up explanation to the learner’s responses.
@@ -61,7 +61,7 @@ Score the fresh transfer answer, not recognition of a multiple-choice response:
 ## Known limits and next evidence
 
 - No secondary-school learner observation or biology subject-matter review has been recorded yet. Ask a biology teacher/knowledgeable reviewer to verify level, terminology, and answer key before presenting it as instruction.
-- The selected learner segment and concept are a product choice for a bounded demo, not a finding from the N=7 survey.
+- The selected demo persona and concept are a product choice for a bounded test case, not a finding from the N=7 survey and not a restriction on StudyFellow's intended audience.
 - A short post-lesson response measures immediate application in this scenario, not durable learning, broad effectiveness, or all photosynthesis understanding.
 - English text is the current scope; multilingual quality and curriculum alignment require review before claims are made.
 - Build status is partial: `system/study-fellow-ui/` contains an initial learner dashboard and photosynthesis lesson shell. Adaptive response branches, scored fresh transfer, recap, and reliable resume behavior remain to be implemented.

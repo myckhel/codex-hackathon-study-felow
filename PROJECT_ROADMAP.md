@@ -4,7 +4,7 @@
 **Judging rubric (owner-provided, 12 Oct 2026):** 25% Uniqueness (novelty of approach); 25% Scalability (ability to scale across geographies); 25% Codex Usage (how well Codex was used to build the project); 25% Presentation (quality of the submission presentation). No detailed sub-rubric or scoring guidance has been supplied.  
 **Primary track:** Engagement & Staying in the Learning Journey.  
 **Supporting fit:** Access & Discovery, through making a learner-provided resource easier to use; keep Guidance & Opportunity as a future direction unless the core demo naturally supports a credible next step.  
-**North-star demo:** A learner gets stuck on a real concept, StudyFellow adapts its teaching, the learner demonstrates improved understanding, and the lesson can be resumed with a useful next step.
+**North-star demo:** A learner gets stuck on a specific concept, StudyFellow responds to their reasoning, the learner demonstrates application, and they see a clear next step. The reusable product is intended for professional and secondary-school, college, and university learners; the hackathon demonstrates it with one photosynthesis lesson. Local resume remains planned until implemented.
 
 ## Early learner signal (owner-provided summary, 8 Oct 2026)
 
@@ -30,7 +30,7 @@ Support two ways in: **Learn now** for a one-off topic/question/resource, and **
 
 **Must demonstrate**
 
-- One defined learner group, one subject, and one credible sample resource.
+- One configured demo persona, subject, and credible sample resource, while documenting the intended broader learner audience and reusable topic-learning flow.
 - Start from a resource (PDF or provided sample) or a topic; set a goal and available time.
 - Short diagnostic or recall check, with a skip option.
 - A structured teaching loop: explain one idea → ask the learner → respond to their reasoning → adapt an explanation/example → guided practice.
@@ -66,7 +66,7 @@ Mark each item `[x]` when its acceptance evidence exists; use `[~]` for in progr
 
 - [x] Capture the official challenge brief and preserve its instruction not to use AI to generate the capstone idea.
 - [~] Capture submission and judging details: window is 12–16 Oct 2026; four equal-weight rubric categories are recorded above; required deliverable is a demonstrable idea presented well; owner confirms no additional AI rules. Still confirm the Friday cutoff time/timezone.
-- [x] Select a learner segment and one concept-heavy subject for the prototype: secondary-school biology, photosynthesis. This is a bounded concept with an observable change in light and a transfer question; reachability and need are not yet validated.
+- [x] Select a bounded demo persona and concept: secondary-school biology, photosynthesis. This is one configured test case for the broader product intended for professional, secondary-school, college, and university learners; reachability and need are not yet validated.
 - [x] Review the owner's N=7 survey analysis; record recurring signals without presenting the small sample as representative. Raw response rows remain unverified.
 - [x] Write the problem, promise, and demo success measure in `outputs/photosynthesis-demo-spec.md` (owner-supplied framing).
 - [x] Define the learning signal: 2/2 on a fresh transfer question, with prediction and light-energy reasoning scored separately.
@@ -78,7 +78,7 @@ Mark each item `[x]` when its acceptance evidence exists; use `[~]` for in progr
 
 ### Stage 2 — Lock the demo journey and evidence (Fri 9–Sat 10 Oct)
 
-- [x] Storyboard a 3–5 minute judge-facing lesson journey with misconception branches and a fresh transfer check in `outputs/photosynthesis-demo-spec.md`. Session interruption/resume remains a separate product proof and is not included in this concept slice.
+- [x] Storyboard a 3–5 minute judge-facing lesson journey with misconception branches and a fresh transfer check in `outputs/photosynthesis-demo-spec.md`. Local interruption/resume is part of the MVP continuity goal but remains unimplemented; see Stage 3.
 - [x] Choose OpenStax Biology 2e photosynthesis material and prepare the explanation, prompt, and fresh final question in the spec; subject-matter review remains outstanding.
 - [x] Define minimum interaction acceptance criteria and scoring rubric in the spec.
 - [x] Set the differentiating proof for this slice: response-specific explanation followed by a novel application check.
@@ -92,7 +92,7 @@ Mark each item `[x]` when its acceptance evidence exists; use `[~]` for in progr
 - [~] Implement the start flow (resource/topic, goal, time, optional diagnostic). Initial landing/dashboard and photosynthesis entry point exist; learner goal/time and skip-able diagnostic remain to build.
 - [~] Implement the lesson loop with one concept, learner input, adaptive follow-up, and guided practice. A basic photosynthesis lesson shell exists; response-specific branches and fresh transfer scoring remain to build.
 - [~] Add citations/source passages where available; visibly distinguish source-supported facts from supplemental explanation. Initial OpenStax source link is present in lesson shell; adaptivity/source treatment is incomplete.
-- [ ] Persist enough progress to return to the session and show the next action.
+- [ ] Persist enough progress locally to return to the session and show the next action. This is the MVP's limited save/resume proof; no account or cross-device sync.
 - [ ] Keep a simple fallback path using a preloaded resource if upload, network, or model integration is unreliable.
 
 **Gate:** One learner can complete the main journey without a presenter manually repairing the flow.
@@ -131,10 +131,10 @@ Mark each item `[x]` when its acceptance evidence exists; use `[~]` for in progr
 ## Progress snapshot (updated 13 Oct 2026)
 
 - **Current stage:** Stage 3 — build the vertical slice; initial app scaffold and basic photosynthesis route are in place.
-- **Completed:** Official brief and judging rubric recorded; owner-selected secondary-school biology/photosynthesis scenario framed; the five product-owner framing areas (problem, pain, opportunity, market hypothesis, vision) documented in `PROJECT_BRIEF.md` with evidence limits; UX blueprint captured in `outputs/studyfellow-ux-blueprint.md`; Stage 1 items 3–7 have acceptance evidence; Stage 2 lesson journey, source, learning rubric, and implementation criteria captured in `outputs/photosynthesis-demo-spec.md`; Bun/Vite React TypeScript app created in `system/study-fellow-ui/` with requested stack.
-- **In progress:** Complete the adaptive learner loop, fresh transfer check, session resume, and source-grounded feedback. Biology review and target-learner feedback are still desirable.
-- **Blocked by / unknown:** Exact submission cutoff/timezone and detailed rubric guidance; raw survey rows; team capacity. The photosynthesis segment's need/reachability, Nigerian curriculum, effective marketing channels, priority adopter/payer segment, and willingness to pay are not validated. Production build currently warns about a large JS bundle (~794 kB minified).
-- **Next action:** Implement response-specific feedback and fresh transfer scoring, persist the learner's progress, and split/trim the bundle; then review the lesson science.
+- **Completed:** Official brief and judging rubric recorded; broad intended learner audience (professionals plus secondary-school, college, and university learners) separated from the owner-selected secondary-school biology/photosynthesis demo; learners distinguished from potential institutional adopters/payers; product-owner framing and evidence limits documented in `PROJECT_BRIEF.md`; UX blueprint and demo spec updated; Stage 2 lesson journey, source, learning rubric, and implementation criteria captured; Bun/Vite React TypeScript app created in `system/study-fellow-ui/` with requested stack.
+- **In progress:** Complete the adaptive learner loop, fresh transfer check, and local save/resume. Biology review and feedback from learners across relevant contexts are still desirable.
+- **Blocked by / unknown:** Exact submission cutoff/timezone and detailed rubric guidance; raw survey rows; team capacity. Need/reachability for the photosynthesis demo, Nigerian curriculum, acquisition channels, first learner/adopter segment, and willingness to pay remain unvalidated. Architecture notes the main JS chunk at ~611 kB and total JS at ~941 kB; this is a recorded measurement, not a fresh build from this update.
+- **Next action:** Implement response-specific feedback, fresh transfer scoring, and local save/resume; reduce initial and total asset costs where feasible; then review the lesson science and observe a small number of learners.
 
 ## Working rules
 
