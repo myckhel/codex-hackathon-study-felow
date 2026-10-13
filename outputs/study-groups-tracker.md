@@ -12,6 +12,8 @@ The lead is for TS Academy VA, a virtual-assistant learning group spanning secon
 
 The second lead is `SG-20261009-edtech-150` (row 3): contact Ogudu, Educational Technology learners at university level, WhatsApp group of about 150. The group name and country were not provided. The contact says survey invitations are not allowed and gave no willingness to review or share. The WhatsApp number was intentionally not copied into the tracker. Status: **Hold — group rules prohibit survey invitations**. No survey, link, or invitation was created for this lead.
 
+Third lead: `SG-20261013-cyber-management-15` (row 4), added 13 October 2026. Rock is connected to a WhatsApp group of 15 master's students in Cyber Security Management. Group name, institution and country are unknown; phone number omitted. Invitations are allowed and Rock said yes to reviewing/sharing, with exact handoff preference unspecified. No difficult topic was identified. A six-question discovery form and linked response sheet were created; the owner approved publication and the respondent page was verified live. Status: **Published — draft awaiting Rock's review**. Invitation not sent or posted. Draft, responder URL and owner URLs: `rock-cyber-management-outreach.md`.
+
 ## Record fields
 
 Group ID; date added; contact name; optional contact handle; group name/link; subject/course; learner level; country/context; platform; approximate group size; difficult concept mentioned; posting rules/preferred process; contact willingness to review/share; preferred handoff; tailored invitation draft; survey link; post status; date shared; response count; follow-up/next action.
