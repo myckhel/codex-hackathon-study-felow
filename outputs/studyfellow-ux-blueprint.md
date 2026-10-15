@@ -2,6 +2,8 @@
 
 **Purpose:** Small product/design reference for the hackathon MVP. StudyFellow is intended for professional learners and secondary-school, college, and university students who struggle with a specific concept or topic. The current build demonstrates one configured photosynthesis lesson; it does not narrow the product audience to biology or secondary school. The local frontend journey now exists in `system/study-fellow-ui/`; it uses deterministic feedback and assessment, with verification evidence tracked in project memory.
 
+**Product-spec update:** The owner has since clarified that the one-off experience should be centered on a tutor-inferred goal, multi-step dynamic teaching, multimodal explanation, and in-context clarification. This earlier blueprint's required custom goal and single fixed photosynthesis path are superseded by [`studyfellow-project-spec.md`](studyfellow-project-spec.md) and its companion [`studyfellow-idea-sketch.md`](studyfellow-idea-sketch.md). Keep this document as the source for the existing photosynthesis lesson details and FigJam evidence; use the new spec for product direction.
+
 ## 1. Overall learner experience
 
 The learner should be able to start without creating an account, skip personalization, get help with one concept, try a new application, and return later without losing their place.

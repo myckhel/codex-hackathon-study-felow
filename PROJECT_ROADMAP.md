@@ -1,5 +1,9 @@
 # StudyFellow Hackathon Roadmap
 
+**Frontend delivery tracker:** [frontend plans/roadmap.md](system/study-fellow-ui/plans/roadmap.md) sequences the revised UI/UX in phases with P0/P1/P2 priorities, dependencies, acceptance criteria, and evidence tracking. This document continues to track the wider hackathon; backend planning remains deferred.
+
+**Product direction update (13 Oct 2026):** The owner has clarified that the product should center on a one-off, tutor-planned, dynamic, multimodal learning session with in-context clarification. Use `outputs/studyfellow-project-spec.md` and `outputs/studyfellow-idea-sketch.md` as the updated UX/spec references; the earlier single-photosynthesis blueprint is superseded for general flow, while its biology content and rubric remain valid. The completed app is currently a deterministic single-scenario foundation; adapting it to scenario-driven playback is future implementation work, not an existing capability.
+
 **Submission window:** Monday 12 October–Friday 16 October 2026 (official dates; exact cutoff time/timezone to confirm). Use 8–11 October for scope decisions and the core build; harden and prepare the submission during the window, aiming to submit early.  
 **Judging rubric (owner-provided, 12 Oct 2026):** 25% Uniqueness (novelty of approach); 25% Scalability (ability to scale across geographies); 25% Codex Usage (how well Codex was used to build the project); 25% Presentation (quality of the submission presentation). No detailed sub-rubric or scoring guidance has been supplied.  
 **Primary track:** Engagement & Staying in the Learning Journey.  
@@ -97,11 +101,11 @@ Mark each item `[x]` when its acceptance evidence exists; use `[~]` for in progr
 
 **Gate:** One learner can complete the main journey without a presenter manually repairing the flow.
 
-### Stage 4 — Validate and harden the teaching moment (Tue 13 Oct)
+### Stage 4 — Validate and harden the teaching moment (14–15 Oct)
 
 - [ ] Have a subject-knowledgeable reviewer inspect the lesson, misconception response, and questions.
 - [ ] Observe a small number of target learners using the flow; record where they hesitate, what helps, and whether the final answer shows understanding.
-- [ ] Fix the highest-impact correctness, usability, and continuity issues first.
+- [x] Fix confirmed technical blockers: enabled Input boundary/placeholder contrast corrected; real keyboard traversal and successful reset/reload coverage added. Qualified biology/learner findings are still unavailable and must be triaged when received. [Phase 4 evidence](system/study-fellow-ui/plans/phase-4/evidence.md).
 - [x] Check empty answers, unknown/contradictory responses, failed lazy imports, storage failure/corruption, long goals/filenames, and reload/resume recovery through Playwright; sources and full answers remain available through disclosures.
 - [x] Check desktop/mobile and 320px layouts, stage focus, keyboard actions, reduced motion, and cached production offline behavior. Inline SVG icons and energy-flow illustrations use existing tokens without new dependencies; comprehensive accessibility and low-end-device audits remain future work.
 
@@ -110,9 +114,9 @@ Mark each item `[x]` when its acceptance evidence exists; use `[~]` for in progr
 ### Stage 5 — Integrate and make the demo resilient (Wed 14–Thu 15 Oct)
 
 - [ ] Freeze new feature work unless it directly fixes the core journey.
-- [ ] Run the complete demo path from a clean start and after a simulated interruption.
+- [x] Run the complete prepared path from clean start through leave/reload/resume: automated desktop Chrome rehearsal 210.03s with zero page errors; full production 88 passed/4 expected development-only skips. Human presenter/device rehearsal remains pending.
 - [ ] Verify the sample resource, source references, and demo account/data are ready.
-- [ ] Prepare a deterministic fallback (seeded lesson or recorded screenshots/video) that preserves the same story if live services fail.
+- [x] Prepare ordered screenshot fallback, exact 3–5 minute script, quick alternate paths, credits and Codex iteration record. [Rehearsal packet](system/study-fellow-ui/plans/phase-4/rehearsal.md); automated timing is separate from human narration.
 - [ ] Fix only blockers and high-visibility defects; note known limitations.
 
 **Gate:** The demo can be delivered reliably on the intended device/network, with fallback materials ready.
@@ -128,13 +132,15 @@ Mark each item `[x]` when its acceptance evidence exists; use `[~]` for in progr
 
 **Gate:** Submission is complete within the official window and the demo's value and evidence are clear within the allocated time.
 
-## Progress snapshot (updated 13 Oct 2026)
+## Progress snapshot (updated 15 Oct 2026)
 
 - **Current stage:** Stage 4 — validate the completed deterministic frontend vertical slice; biology review and target-learner observation remain outstanding.
 - **Completed:** Official brief and judging rubric recorded; broad intended learner audience (professionals plus secondary-school, college, and university learners) separated from the owner-selected secondary-school biology/photosynthesis demo; learners distinguished from potential institutional adopters/payers; product-owner framing and evidence limits documented in `PROJECT_BRIEF.md`; UX blueprint and demo spec updated; Stage 2 lesson journey, source, learning rubric, and implementation criteria captured; Bun/Vite React TypeScript app created in `system/study-fellow-ui/` with requested stack.
 - **Implementation evidence (13 Oct):** Lint/build passed; 24 desktop/mobile development checks passed with two production-only checks skipped; six additional assessment/storage checks and two final production offline checks passed. Independent reviewer verdict is recorded in project memory. The flow includes setup, optional diagnostic, response-specific local feedback, transfer/retry, recap, and browser-local resume.
-- **Blocked by / unknown:** Exact submission cutoff/timezone and detailed rubric guidance; raw survey rows; team capacity. Need/reachability for the photosynthesis demo, Nigerian curriculum, acquisition channels, first learner/adopter segment, and willingness to pay remain unvalidated. Final build measures main JS at 624.36 kB and total app JS at 797.04 kB; PWA precache is 797.84 KiB. The main-chunk warning remains, although total app JS is lower than the 941.21 kB baseline.
-- **Next action:** Have the lesson science reviewed, observe a small number of learners, fix resulting blockers, and rehearse the clean-start/interruption demo. Avoid new scope before submission.
+- **Blocked by / unknown:** Exact submission cutoff/timezone and detailed rubric guidance; raw survey rows; team capacity. Need/reachability for the photosynthesis demo, Nigerian curriculum, acquisition channels, first learner/adopter segment, and willingness to pay remain unvalidated. Historical 13 October build measured main JS at 624.36 kB and total app JS at 797.04 kB; PWA precache is 797.84 KiB. The main-chunk warning remains, although total app JS is lower than the 941.21 kB baseline.
+- **Phase 4 technical results (14 Oct):** Biology-review and learner-observation packets prepared without outreach; 0 target-learner observations. Desktop Chrome is the presentation target. Input border/placeholder contrast fixed; six real keyboard/reset/contrast checks passed. Lint/build/contracts and final production 88 passed/4 expected skips/zero failures, including cached-offline resume on desktop/mobile. Automated rehearsal 210.03s, zero browser errors; ten fallback screenshots and candidate fingerprint prepared. [Independent review](system/study-fellow-ui/plans/phase-4/review.md). Candidate total/main JS 738.868/651.287 kB; PWA 746.46 KiB. Development reload failures and unchanged stable rerun are explicitly recorded. [Phase 4 handoff](system/study-fellow-ui/plans/phase-4/README.md).
+- **Owner walkthrough follow-up (15 Oct):** Replaced premature home teaching with a neutral journey, made the topic example prefill-only, clarified diagnostic answers, separated current-step examples from Restart, adopted owner-confirmed answer-mode Send, and simplified recap origin wording. No schema/dependency/science change. Full development 106 passed/2 expected skips, final affected 16 passed; final production 104 passed/4 expected dev-only skips/zero failures and independent approval recorded. Both cached-offline resumes passed; current JS 735.104 kB/main 650.772 kB, PWA 743.01 KiB. Updated automated interaction walkthrough 7.91s/zero errors is not a human timing claim. [Current evidence](system/study-fellow-ui/plans/phase-4-feedback/evidence.md).
+- **Next action:** Arrange qualified biology review and relevant learner sessions, then address/recheck findings and record human presenter rehearsal. FE-20 remains conditional and final frontend freeze pending. Avoid new scope; no deployment/submission implied.
 
 ## Working rules
 
@@ -142,3 +148,5 @@ Mark each item `[x]` when its acceptance evidence exists; use `[~]` for in progr
 - Protect a coherent vertical slice; cut enhancements before compromising the core teaching loop.
 - Separate confirmed facts from hypotheses. A few user sessions provide directional evidence, not proof of broad impact or long-term retention.
 - Update this roadmap after each meaningful work session: checkbox state, evidence, decision changes, blockers, and next action.
+
+- **Completion feedback and motion (15 Oct):** Broader product home lead; clear Step complete / Check complete and all-clear Session complete states; plain plant-choice/light-energy feedback; further reading optional after success. Brief plan/content/reply entrances respect reduced motion, stable input/focus and no resume replay. Canonical content, scoring and saved-session bytes unchanged. Focused development16 and dev-only recovery4 passed, lint/build/contracts passed; final full production120 passed/4 expected skips/zero failures (both cached-offline checks passed) and independent approval in [current evidence](system/study-fellow-ui/plans/phase-4-polish/evidence.md) and [review](system/study-fellow-ui/plans/phase-4-polish/review.md). Current JS740.614kB/main650.783kB, precache748.78KiB; automated interaction timing2.73s/zero errors is not human narration. Qualified review/0 learner observations/human rehearsal remain gaps, FE-20 conditional and FE-21 pending.

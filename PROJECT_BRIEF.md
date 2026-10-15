@@ -2,9 +2,9 @@
 
 ## Overview
 
-**StudyFellow is an AI teaching fellow that helps learners make steady progress through their studies.** A learner can start a one-off lesson whenever they need help, or schedule regular sessions around their courses. In either case, they can bring a topic, question, assignment, or learning resource.
+**StudyFellow is an AI teaching fellow that helps learners make steady progress through their studies.** A learner can start with a topic, question, assignment, or learning resource and describe what is confusing. StudyFellow diagnoses a likely gap, infers a useful learning outcome, plans a short route, and teaches through responsive steps. One-off help is the first priority; recurring study plans are a later session mode.
 
-The fellow teaches progressively: it clarifies the learner's goal, explains concepts in manageable steps, uses practical examples, invites practice, responds to the learner's reasoning, and adapts when something is unclear. It recaps key ideas, saves progress, and helps the learner continue later. Scheduled sessions may include reminders and a short check-in; missed sessions should be easy to reschedule or catch up on.
+The fellow teaches progressively through explanations, practical examples, questions, guided practice, and useful visuals such as diagrams. The learner can ask a clarifying question at any point and stay on the current step until ready. StudyFellow responds to the learner's reasoning, adapts the route when needed, and ends with a recap and next action. It should infer the teaching goal rather than require the learner to design one, while allowing the learner to correct the tutor's interpretation. Prepared, replayable scenario conversations can demonstrate the dynamic experience before live generation is available.
 
 ## Product owner framing checklist (13 October 2026)
 
@@ -76,15 +76,15 @@ For the first prototype, prioritize a short guided practice loop, feedback that 
 
 ## Product experience
 
-1. The learner chooses **Learn now** for a one-off session or **Continue learning** for a scheduled or returning session.
-2. They provide a topic, question, assignment, or learning resource and choose what they want to achieve and how much time they have.
-3. The fellow checks prior knowledge when useful, with an option to skip.
-4. It teaches one idea at a time using explanation, practical examples, questions, and guided practice.
-5. It responds to misunderstandings with a different explanation or example, then checks learning with a fresh application question.
-6. It closes with a concise recap, what the learner demonstrated or should revisit, and a manageable next step.
-7. It saves enough context for the learner to resume later without repeating their story. Scheduled sessions can use optional reminders; after a missed session, learners can reschedule or choose a short catch-up.
+1. The learner brings a topic, question, assignment, or learning resource and describes what feels confusing.
+2. StudyFellow diagnoses the likely gap, asks one focused follow-up if needed, and does not block help when the learner is unsure.
+3. StudyFellow infers a useful learning outcome and proposes a short, ordered route. The learner can correct the interpretation; they do not have to supply a formal goal.
+4. The one-off session teaches through varied steps: explanation, example, diagram, learner question, practice, or a short prerequisite lesson.
+5. The learner can ask a clarifying question within any step. The answer appears in context and does not discard their place or draft.
+6. StudyFellow responds to learner evidence, adapts explanations or step order, then checks application with a fresh task.
+7. It closes with a concise recap, what the learner demonstrated or should revisit, source references, and a manageable next action; saved progress supports a later return.
 
-One-off and scheduled sessions share the same teaching loop. A learner should be able to try an isolated lesson before making any ongoing commitment.
+The tutor can recommend a recurring plan when the learner's need suggests it, but the MVP starts with one-off help. Scheduling and reminders require later design and explicit learner consent.
 
 ## Hackathon fit
 
@@ -92,7 +92,7 @@ One-off and scheduled sessions share the same teaching loop. A learner should be
 
 ## Proof of concept
 
-Demonstrate one complete, reusable topic-learning loop using a configured photosynthesis lesson: start from a topic or sample resource, encounter a deliberate misconception, receive an adapted explanation, complete practice, and see a useful recap. The demo should make the interaction transferable to other subjects and learner levels without claiming those configurations are already built. The frontend now implements local save/resume for one browser session, with explicit unavailable-storage and corrupt-data recovery. This is a deterministic photosynthesis demo; broad topic teaching, resource ingestion, and live model integration remain future work.
+Demonstrate a reusable topic-learning loop with several prepared, replayable scenarios, beginning with the configured photosynthesis lesson. Each demonstrates the tutor inferring an outcome, planning multiple steps, teaching with text and an explanatory image/diagram, handling a learner clarification, adapting to a response, and checking application. Save the simulated conversations as clearly labeled demo data; do not present them as live model generation or real learner results. The UI should feel like dynamically composed teaching content, not a static questionnaire. See `outputs/studyfellow-idea-sketch.md` and `outputs/studyfellow-project-spec.md` for the revised experience and acceptance criteria. Recurring study planning remains later work.
 
 ### In scope for the first proof
 
